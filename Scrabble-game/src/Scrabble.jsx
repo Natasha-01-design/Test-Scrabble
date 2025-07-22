@@ -16,8 +16,6 @@ const SpellGridScrabble = () => {
     setSelectedTile,
     placeLetter,
     nextTurn,
-    introMusic,
-    victoryMusic,
     isSubmitting,
     submitWord,
   } = useGameState();
@@ -37,10 +35,9 @@ const SpellGridScrabble = () => {
         minHeight: '100vh'
       }}
     >
-      <audio ref={introMusic} src="/Audio/[SPOTDOWNLOADER.COM] CANT STOP.mp3" autoPlay loop />
-      <audio ref={victoryMusic} src="/Audio/[SPOTDOWNLOADER.COM] CHAMPAIN & VACAY.mp3" />
-
-      <div className="left-panel" style={{ flex: 2, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+  
+        <div className="left-panel" style={{ flex: 2, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          
         <div>
           <h1
             className="game-title"

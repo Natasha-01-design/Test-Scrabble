@@ -60,7 +60,7 @@ const ScoreBoard = ({ players, currentTurn, nextTurn, isPaused = false }) => {
         🔊 {players[currentTurn]?.name.toUpperCase()} is Playing!
       </div>
 
-      <div className="score-banner">🏆 Battle of the Realms</div>
+      <div className="score-banner">Battle of the Realms</div>
 
       <div className="timer" style={{ color: getTimerColor() }}>
         ⏱ <strong>{timer}s</strong> left
@@ -86,9 +86,9 @@ const ScoreBoard = ({ players, currentTurn, nextTurn, isPaused = false }) => {
                 <strong>{p.name}</strong> <br />
                 <span>{p.style}</span>
                 <div className="mini-stats">
-                  🧩 Tiles: {p.tiles?.length || 7} <br />
-                  📜 Words: {p.wordsPlayed?.length || 0} <br />
-                  🔥 Streak: {p.streak || 0}
+                 Tiles: {p.tiles?.length || 7} <br />
+                  Words: {p.wordsPlayed?.length || 0} <br />
+                  Streak: {p.streak || 0}
                 </div>
               </div>
               <div className="player-score">
