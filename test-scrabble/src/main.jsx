@@ -1,15 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import Player from "./Components/Player.jsx"
 
-import PlayerInfoPanel from './Components/PlayerInformation.jsx'
+
+import React, { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import { PlayerInfoPanel } from './Components/PlayerInformation'; 
+import { App } from './Components/PlayerInformation';
+
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-  
-    {/* <Player /> */}
+  <React.StrictMode>
+    <App />
     <PlayerInfoPanel/>
-  </StrictMode>,
-)
+  </React.StrictMode>
+);
